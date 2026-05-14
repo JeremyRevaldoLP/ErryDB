@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:film="http://www.semanticweb.org/filmrekomendasi/ontology#">
+
+    <!-- =============================== -->
+    <!--         INSTANCES: GENRE        -->
+    <!-- =============================== -->
+    <film:Genre rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Aksi">
+        <rdfs:label>Aksi</rdfs:label>
+    </film:Genre>
+    <film:Genre rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama">
+        <rdfs:label>Drama</rdfs:label>
+    </film:Genre>
+    <film:Genre rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_SciFi">
+        <rdfs:label>Sci-Fi</rdfs:label>
+    </film:Genre>
+    <film:Genre rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Thriller">
+        <rdfs:label>Thriller</rdfs:label>
+    </film:Genre>
+    <film:Genre rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Animasi">
+        <rdfs:label>Animasi</rdfs:label>
+    </film:Genre>
+    <film:Genre rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Komedi">
+        <rdfs:label>Komedi</rdfs:label>
+    </film:Genre>
+    <film:Genre rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Horor">
+        <rdfs:label>Horor</rdfs:label>
+    </film:Genre>
+
+    <!-- =============================== -->
+    <!--       INSTANCES: SUTRADARA      -->
+    <!-- =============================== -->
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_ChristopherNolan">
+        <rdfs:label>Christopher Nolan</rdfs:label>
+    </film:Sutradara>
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_JamesCameron">
+        <rdfs:label>James Cameron</rdfs:label>
+    </film:Sutradara>
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_StevenSpielberg">
+        <rdfs:label>Steven Spielberg</rdfs:label>
+    </film:Sutradara>
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_QuentinTarantino">
+        <rdfs:label>Quentin Tarantino</rdfs:label>
+    </film:Sutradara>
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_PeterJackson">
+        <rdfs:label>Peter Jackson</rdfs:label>
+    </film:Sutradara>
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_RidleyScott">
+        <rdfs:label>Ridley Scott</rdfs:label>
+    </film:Sutradara>
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_MartinScorsese">
+        <rdfs:label>Martin Scorsese</rdfs:label>
+    </film:Sutradara>
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_FrankDarabont">
+        <rdfs:label>Frank Darabont</rdfs:label>
+    </film:Sutradara>
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_AndrewStanton">
+        <rdfs:label>Andrew Stanton</rdfs:label>
+    </film:Sutradara>
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_JonFavreau">
+        <rdfs:label>Jon Favreau</rdfs:label>
+    </film:Sutradara>
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_DavidFincher">
+        <rdfs:label>David Fincher</rdfs:label>
+    </film:Sutradara>
+    <film:Sutradara rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_LanaWachowski">
+        <rdfs:label>Lana Wachowski</rdfs:label>
+    </film:Sutradara>
+
+    <!-- =============================== -->
+    <!--         INSTANCES: FILM         -->
+    <!-- =============================== -->
+
+    <!-- Film 1: Inception -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Inception">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Inception</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2010</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.8</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">inception.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_SciFi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Thriller"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_ChristopherNolan"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Interstellar"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheMatrix"/>
+    </film:Film>
+
+    <!-- Film 2: Interstellar -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Interstellar">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Interstellar</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2014</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.6</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interstellar.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_SciFi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_ChristopherNolan"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Inception"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Avatar"/>
+    </film:Film>
+
+    <!-- Film 3: The Dark Knight -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheDarkKnight">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Dark Knight</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thedarkknight.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Aksi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Thriller"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_ChristopherNolan"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Inception"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_IronMan"/>
+    </film:Film>
+
+    <!-- Film 4: Avatar -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Avatar">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avatar</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2009</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.8</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">avatar.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_SciFi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Aksi"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_JamesCameron"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Interstellar"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Inception"/>
+    </film:Film>
+
+    <!-- Film 5: Titanic -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Titanic">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Titanic</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1997</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.9</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">titanic.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_JamesCameron"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Avatar"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_SchindlersList"/>
+    </film:Film>
+
+    <!-- Film 6: Schindler's List -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_SchindlersList">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schindler's List</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.0</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">schindlerslist.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_StevenSpielberg"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Titanic"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheSilenceOfTheLambs"/>
+    </film:Film>
+
+    <!-- Film 7: Jurassic Park -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_JurassicPark">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jurassic Park</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1993</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.1</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jurassicpark.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_SciFi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Aksi"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_StevenSpielberg"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Avatar"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_WallE"/>
+    </film:Film>
+
+    <!-- Film 8: Pulp Fiction -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_PulpFiction">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pulp Fiction</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.9</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">pulpfiction.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Thriller"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_QuentinTarantino"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheSilenceOfTheLambs"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_FightClub"/>
+    </film:Film>
+
+    <!-- Film 9: The Lord of the Rings -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheLordOfTheRings">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Lord of the Rings: The Fellowship of the Ring</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2001</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.8</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thelordoftheringsthefellowshipofthering.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Aksi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_PeterJackson"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheDarkKnight"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Gladiator"/>
+    </film:Film>
+
+    <!-- Film 10: Gladiator -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Gladiator">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gladiator</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2000</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.5</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gladiator.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Aksi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_RidleyScott"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheLordOfTheRings"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheDarkKnight"/>
+    </film:Film>
+
+    <!-- Film 11: The Silence of the Lambs -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheSilenceOfTheLambs">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Silence of the Lambs</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1991</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.6</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thesilenceofthelambs.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Thriller"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Horor"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_MartinScorsese"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_PulpFiction"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_FightClub"/>
+    </film:Film>
+
+    <!-- Film 12: The Shawshank Redemption -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheShawshankRedemption">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Shawshank Redemption</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1994</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">9.3</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theshawshankredemption.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_FrankDarabont"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_SchindlersList"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Gladiator"/>
+    </film:Film>
+
+    <!-- Film 13: Wall-E -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_WallE">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">WALL-E</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.4</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">walle.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Animasi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_SciFi"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_AndrewStanton"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Coco"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Interstellar"/>
+    </film:Film>
+
+    <!-- Film 14: Coco -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Coco">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coco</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2017</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.4</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">coco.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Animasi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_AndrewStanton"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_WallE"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheShawshankRedemption"/>
+    </film:Film>
+
+    <!-- Film 15: Iron Man -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_IronMan">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Iron Man</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2008</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7.9</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ironman.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Aksi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_SciFi"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_JonFavreau"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheDarkKnight"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Avatar"/>
+    </film:Film>
+
+    <!-- Film 16: Fight Club -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_FightClub">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fight Club</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.8</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fightclub.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Thriller"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_DavidFincher"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_PulpFiction"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheSilenceOfTheLambs"/>
+    </film:Film>
+
+    <!-- Film 17: The Matrix -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheMatrix">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Matrix</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1999</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.7</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">thematrix.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_SciFi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Aksi"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_LanaWachowski"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Inception"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Interstellar"/>
+    </film:Film>
+
+    <!-- Film 18: Se7en -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Se7en">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Se7en</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1995</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.6</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">se7en.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Thriller"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_DavidFincher"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_FightClub"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheSilenceOfTheLambs"/>
+    </film:Film>
+
+    <!-- Film 19: Goodfellas -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_Goodfellas">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Goodfellas</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1990</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.7</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">goodfellas.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Drama"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Thriller"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_MartinScorsese"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_PulpFiction"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheShawshankRedemption"/>
+    </film:Film>
+
+    <!-- Film 20: The Avengers -->
+    <film:Film rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheAvengers">
+        <film:hasTitle rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The Avengers</film:hasTitle>
+        <film:hasYear rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2012</film:hasYear>
+        <film:hasRating rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8.0</film:hasRating>
+        <film:hasPoster rdf:datatype="http://www.w3.org/2001/XMLSchema#string">theavengers.jpg</film:hasPoster>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_Aksi"/>
+        <film:hasGenre rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Genre_SciFi"/>
+        <film:directedBy rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Sutradara_JonFavreau"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_IronMan"/>
+        <film:hasRecommendation rdf:resource="http://www.semanticweb.org/filmrekomendasi/ontology#Film_TheDarkKnight"/>
+    </film:Film>
+
+</rdf:RDF>

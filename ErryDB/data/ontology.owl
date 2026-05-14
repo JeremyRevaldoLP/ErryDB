@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#">
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#">
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#">
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <!ENTITY film "http://www.semanticweb.org/filmrekomendasi/ontology#">
+]>
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:film="http://www.semanticweb.org/filmrekomendasi/ontology#">
+
+    <!-- =============================== -->
+    <!--         ONTOLOGY HEADER         -->
+    <!-- =============================== -->
+    <owl:Ontology rdf:about="http://www.semanticweb.org/filmrekomendasi/ontology">
+        <rdfs:label>Film Rekomendasi Ontology</rdfs:label>
+        <rdfs:comment>Ontologi untuk sistem rekomendasi film berbasis Web Semantik</rdfs:comment>
+    </owl:Ontology>
+
+    <!-- =============================== -->
+    <!--            3 CLASSES            -->
+    <!-- =============================== -->
+
+    <!-- Class: Film -->
+    <owl:Class rdf:about="&film;Film">
+        <rdfs:label>Film</rdfs:label>
+        <rdfs:comment>Merepresentasikan sebuah karya film</rdfs:comment>
+    </owl:Class>
+
+    <!-- Class: Genre -->
+    <owl:Class rdf:about="&film;Genre">
+        <rdfs:label>Genre</rdfs:label>
+        <rdfs:comment>Kategori atau jenis dari sebuah film</rdfs:comment>
+    </owl:Class>
+
+    <!-- Class: Sutradara -->
+    <owl:Class rdf:about="&film;Sutradara">
+        <rdfs:label>Sutradara</rdfs:label>
+        <rdfs:comment>Individu yang menyutradarai sebuah film</rdfs:comment>
+    </owl:Class>
+
+    <!-- =============================== -->
+    <!--       3 OBJECT PROPERTIES       -->
+    <!-- =============================== -->
+
+    <!-- Object Property: hasGenre -->
+    <owl:ObjectProperty rdf:about="&film;hasGenre">
+        <rdfs:label>hasGenre</rdfs:label>
+        <rdfs:comment>Menghubungkan film dengan genre-nya</rdfs:comment>
+        <rdfs:domain rdf:resource="&film;Film"/>
+        <rdfs:range rdf:resource="&film;Genre"/>
+    </owl:ObjectProperty>
+
+    <!-- Object Property: directedBy -->
+    <owl:ObjectProperty rdf:about="&film;directedBy">
+        <rdfs:label>directedBy</rdfs:label>
+        <rdfs:comment>Menghubungkan film dengan sutradaranya</rdfs:comment>
+        <rdfs:domain rdf:resource="&film;Film"/>
+        <rdfs:range rdf:resource="&film;Sutradara"/>
+    </owl:ObjectProperty>
+
+    <!-- Object Property: hasRecommendation -->
+    <owl:ObjectProperty rdf:about="&film;hasRecommendation">
+        <rdfs:label>hasRecommendation</rdfs:label>
+        <rdfs:comment>Film yang direkomendasikan bersama film ini</rdfs:comment>
+        <rdfs:domain rdf:resource="&film;Film"/>
+        <rdfs:range rdf:resource="&film;Film"/>
+    </owl:ObjectProperty>
+
+    <!-- =============================== -->
+    <!--        4 DATA PROPERTIES        -->
+    <!-- =============================== -->
+
+    <!-- Data Property: hasTitle -->
+    <owl:DatatypeProperty rdf:about="&film;hasTitle">
+        <rdfs:label>hasTitle</rdfs:label>
+        <rdfs:comment>Judul dari film</rdfs:comment>
+        <rdfs:domain rdf:resource="&film;Film"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <!-- Data Property: hasYear -->
+    <owl:DatatypeProperty rdf:about="&film;hasYear">
+        <rdfs:label>hasYear</rdfs:label>
+        <rdfs:comment>Tahun rilis film</rdfs:comment>
+        <rdfs:domain rdf:resource="&film;Film"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+
+    <!-- Data Property: hasRating -->
+    <owl:DatatypeProperty rdf:about="&film;hasRating">
+        <rdfs:label>hasRating</rdfs:label>
+        <rdfs:comment>Rating film dalam skala 0.0 hingga 10.0</rdfs:comment>
+        <rdfs:domain rdf:resource="&film;Film"/>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+
+    <!-- Data Property: hasPoster -->
+    <owl:DatatypeProperty rdf:about="&film;hasPoster">
+        <rdfs:label>hasPoster</rdfs:label>
+        <rdfs:comment>Nama file gambar poster film</rdfs:comment>
+        <rdfs:domain rdf:resource="&film;Film"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+</rdf:RDF>
