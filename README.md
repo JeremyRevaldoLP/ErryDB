@@ -1,46 +1,46 @@
 # 🎬 ErryDB - Semantic Web Movie Recommendation System
 
-ErryDB adalah aplikasi web sederhana berbasis Web Semantic yang digunakan untuk menampilkan, mencari, dan merekomendasikan film menggunakan teknologi RDF/XML, OWL, dan SPARQL.
+ErryDB is a simple Semantic Web-based web application used to display, search, and recommend movies using RDF/XML, OWL, and SPARQL technologies.
 
-Proyek ini dibuat sebagai implementasi konsep Semantic Web dalam pengelolaan data film menggunakan ontologi dan relasi antar entitas.
-
----
-
-## 📌 Fitur Utama
-
-- Menampilkan daftar film beserta:
-  - Poster
-  - Rating
-  - Genre
-  - Sutradara
-- Detail lengkap setiap film
-- Pencarian film berbasis semantik
-- Filter berdasarkan:
-  - Genre
-  - Sutradara
-  - Rentang tahun rilis
-- Sistem rekomendasi film
-- Menampilkan query SPARQL pada halaman detail
-- Representasi data menggunakan RDF/XML dan OWL
+This project was developed as an implementation of Semantic Web concepts in movie data management using ontologies and semantic relationships between entities.
 
 ---
 
-## 🛠️ Teknologi yang Digunakan
+## 📌 Main Features
 
-| Teknologi | Fungsi |
+- Display movie lists including:
+  - Posters
+  - Ratings
+  - Genres
+  - Directors
+- Complete movie detail pages
+- Semantic-based movie search
+- Filtering by:
+  - Genre
+  - Director
+  - Release year range
+- Movie recommendation system
+- Display SPARQL queries on the detail page
+- Data representation using RDF/XML and OWL
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Function |
 |---|---|
-| HTML | Struktur halaman web |
-| CSS | Styling antarmuka |
-| PHP | Backend aplikasi |
-| RDF/XML | Penyimpanan data semantik |
-| OWL | Ontologi dan relasi data |
-| SPARQL | Query data semantik |
-| EasyRdf | Parsing dan traversal RDF |
-| Composer | Dependency manager PHP |
+| HTML | Web page structure |
+| CSS | User interface styling |
+| PHP | Backend application |
+| RDF/XML | Semantic data storage |
+| OWL | Ontology and data relationships |
+| SPARQL | Semantic data querying |
+| EasyRdf | RDF parsing and traversal |
+| Composer | PHP dependency manager |
 
 ---
 
-## 📂 Struktur Proyek
+## 📂 Project Structure
 
 ```bash
 film-rekomendasi/
@@ -61,21 +61,21 @@ film-rekomendasi/
 
 ---
 
-## 🧠 Ontologi Sistem
+## 🧠 System Ontology
 
-Sistem menggunakan ontologi OWL dengan struktur berikut:
+The system uses an OWL ontology with the following structure:
 
-### Class
+### Classes
 - Film
 - Genre
-- Sutradara
+- Director
 
-### Object Property
+### Object Properties
 - `hasGenre`
 - `directedBy`
 - `hasRecommendation`
 
-### Data Property
+### Data Properties
 - `hasTitle`
 - `hasYear`
 - `hasRating`
@@ -83,9 +83,9 @@ Sistem menggunakan ontologi OWL dengan struktur berikut:
 
 ---
 
-## 🔍 Contoh Query SPARQL
+## 🔍 Example SPARQL Query
 
-### Menampilkan Semua Film
+### Display All Movies
 
 ```sparql
 PREFIX film: <http://www.semanticweb.org/filmrekomendasi/ontology#>
@@ -102,34 +102,34 @@ ORDER BY DESC(?rating)
 
 ---
 
-## 🚀 Cara Menjalankan Proyek
+## 🚀 How to Run the Project
 
-### 1. Clone Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/username/errydb.git
 ```
 
-### 2. Masuk ke Folder Proyek
+### 2. Navigate to the Project Folder
 
 ```bash
 cd errydb
 ```
 
-### 3. Install Dependency
+### 3. Install Dependencies
 
 ```bash
 composer install
 ```
 
-### 4. Jalankan di Localhost
+### 4. Run on Localhost
 
-Pindahkan proyek ke folder:
+Move the project folder into:
 
 - `htdocs` (XAMPP)
 - `www` (Laragon)
 
-Lalu jalankan Apache dan buka:
+Then start Apache and open:
 
 ```bash
 http://localhost/errydb
@@ -137,36 +137,36 @@ http://localhost/errydb
 
 ---
 
-## 📸 Halaman Sistem
+## 📸 System Pages
 
-### Halaman Utama
-Menampilkan daftar film, statistik dataset, dan filter pencarian.
+### Home Page
+Displays movie lists, dataset statistics, and filtering options.
 
-### Halaman Detail
-Menampilkan informasi lengkap film beserta relasi RDF/OWL dan rekomendasi film.
+### Detail Page
+Displays complete movie information along with RDF/OWL relationships and recommendations.
 
-### Halaman Pencarian
-Mencari film berdasarkan judul, genre, atau sutradara menggunakan query semantik.
+### Search Page
+Allows users to search movies by title, genre, or director using semantic queries.
 
 ---
 
 ## 📚 Dataset
 
-Dataset terdiri dari:
-- 20 film
-- 7 genre
-- 10 sutradara
+The dataset consists of:
+- 20 movies
+- 7 genres
+- 10 directors
 
-Seluruh data direpresentasikan menggunakan RDF/XML sesuai standar Semantic Web W3C.
+All data is represented using RDF/XML according to W3C Semantic Web standards.
 
 ---
 
-## 🎯 Tujuan Proyek
+## 🎯 Project Goals
 
-- Mengimplementasikan konsep Semantic Web
-- Menggunakan RDF/XML, OWL, dan SPARQL dalam aplikasi web
-- Merepresentasikan hubungan antar data secara semantik
-- Membuat sistem rekomendasi film sederhana tanpa database relasional
+- Implement Semantic Web concepts
+- Apply RDF/XML, OWL, and SPARQL in a web application
+- Represent relationships between data semantically
+- Build a simple movie recommendation system without a relational database
 
 ---
 
@@ -174,11 +174,11 @@ Seluruh data direpresentasikan menggunakan RDF/XML sesuai standar Semantic Web W
 
 Jeremy Revaldo Latuperisa  
 F1G123046  
-Program Studi Ilmu Komputer  
-Universitas Halu Oleo
+Computer Science Study Program  
+Halu Oleo University
 
 ---
 
 ## 📄 License
 
-Project ini dibuat untuk keperluan akademik dan pembelajaran.
+This project was created for academic and educational purposes.
